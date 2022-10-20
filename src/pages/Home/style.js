@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    padding: 20px 8%;
 
     h1 {
         max-width: 700px;
@@ -20,9 +19,13 @@ export const Container = styled.div`
     }
 `;
 
+export const Content = styled.div`
+    padding: 20px 8%;
+`;
+
 export const Wrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 `;
