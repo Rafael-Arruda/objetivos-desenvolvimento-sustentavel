@@ -5,9 +5,18 @@ export const Container = styled.div`
     height: 200px;
     border-radius: 5px;
     padding: 10px;
-    background: #e5243b;
+    background: ${props => props.background};
     color: #fff;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s all;
+
+    :hover {
+        transform: scale(1.05);
+    }
 
     .card-information {
         display: flex;
@@ -25,4 +34,10 @@ export const Container = styled.div`
             text-transform: uppercase;
         }
     }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    
 `;

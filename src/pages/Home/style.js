@@ -28,4 +28,8 @@ export const Wrapper = styled.div`
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
+
+    @media screen and (max-width: 500px){
+        justify-content: center;
+    }
 `;
